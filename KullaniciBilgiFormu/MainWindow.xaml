@@ -1,0 +1,44 @@
+﻿<Window x:Class="KullaniciBilgiFormu.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:KullaniciBilgiFormu"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="414">
+    <Grid Margin="0,0,242,-16">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="19*"/>
+            <RowDefinition Height="408*"/>
+            <RowDefinition Height="24*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="11*"/>
+            <ColumnDefinition Width="28*"/>
+        </Grid.ColumnDefinitions>
+        <Grid Margin="10,10,10,10" Grid.ColumnSpan="2" Grid.RowSpan="3">
+            <StackPanel Margin="0,0,-224,0">
+                <!-- Ad Bilgisi -->
+                <TextBlock Text="Ad:" Margin="5" />
+                <TextBox x:Name="textAd" Margin="5" />
+
+                <!-- Soyad Bilgisi -->
+                <TextBlock Text="Soyad:" Margin="5" />
+                <TextBox x:Name="textSoyad" Margin="5" />
+
+                <!-- Yaş Bilgisi -->
+                <TextBlock Text="Yaş:" Margin="5" />
+                <TextBox x:Name="textYas" Margin="5" />
+
+                <!-- Bilgileri Ekle Butonu -->
+                <Button Content="Bilgileri Ekle" Click="butonEkle_Click" Margin="5" />
+
+                <!-- Kullanıcı Bilgileri Listesi -->
+                <ListBox x:Name="listBilgiler" Margin="5" Height="150" />
+            </StackPanel>
+        </Grid>
+
+
+    </Grid>
+</Window>
+    
